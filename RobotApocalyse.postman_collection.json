@@ -1,0 +1,109 @@
+{
+	"id": "3591dd4c-3ef1-d1ce-d7a7-1024772f15c8",
+	"name": "RobotApocalyse",
+	"description": "",
+	"order": [
+		"281a3a23-aee8-427a-ca9b-17d53bfd96ad",
+		"814047ee-5cb8-3a07-a6d2-65dfa06bf6f7",
+		"44356821-eb3a-396c-ee2d-f434fb3a261f"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1632301577413,
+	"owner": "5266830",
+	"public": false,
+	"requests": [
+		{
+			"id": "281a3a23-aee8-427a-ca9b-17d53bfd96ad",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9192/addSurvivor",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "3591dd4c-3ef1-d1ce-d7a7-1024772f15c8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:9192/addSurvivor",
+			"description": "Post request to add survivors",
+			"descriptionFormat": "html",
+			"time": 1632301595526,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"age\": 30,\n\t\"gender\": \"M\",\n\t\"location\": \"234.34,40.98\",\n\t\"name\": \"vishal\",\n\t\"resources\": \"Water,Food,Ammunition\",\n\t\"infected\": false\n}"
+		},
+		{
+			"id": "44356821-eb3a-396c-ee2d-f434fb3a261f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9192/survivor/stats",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "3591dd4c-3ef1-d1ce-d7a7-1024772f15c8",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:9192/survivor/stats",
+			"description": "Get API to get all the statistics of survivors",
+			"descriptionFormat": "html",
+			"time": 1632316353585,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "814047ee-5cb8-3a07-a6d2-65dfa06bf6f7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9192/survivor/updateSurvivor",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "3591dd4c-3ef1-d1ce-d7a7-1024772f15c8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:9192/survivor/updateSurvivor",
+			"description": "Put request to update fields like last location or resources",
+			"descriptionFormat": "html",
+			"time": 1632314006613,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"age\": 30,\n\t\"gender\": \"M\",\n\t\"location\": \"123.34,40.98\",\n\t\"name\": \"vishal\",\n\t\"resources\": \"Water,Food,Ammunition\",\n\t\"infected\": false,\n\t\"id\": 1\n}"
+		}
+	]
+}
